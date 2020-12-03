@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>JOB BOARD</h1>
+    <form>
+      <div class="form-group">
+        <label for="job-description">Job Description</label>
+        <input id="job-description" name="job-description" type="text" />
+        <label for="location">Location</label>
+        <input id="location" name="location" type="text" />
+      </div>
+      <label for="types">Type of Job:</label>
+      <select name="types" id="job-types">
+        <option value="false">all jobs</option>
+        <option value="true">full-time</option>
+        <option value="part-time">part-time</option>
+      </select>
+      <button onclick="onClickHandler(event)">Search for Jobs</button>
+    </form>
+    <div id="card-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
